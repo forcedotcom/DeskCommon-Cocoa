@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>445A794A-93A5-4B9E-AAD9-EF8359FCE499</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DeskCommon</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>50B4A7076026D15D142CA11C9E24538AFE51B127</key>
+		<string>https://github.com/assistly/common-cocoa.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DeskCommon/DeskCommon.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>50B4A7076026D15D142CA11C9E24538AFE51B127</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/assistly/common-cocoa.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>50B4A7076026D15D142CA11C9E24538AFE51B127</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>50B4A7076026D15D142CA11C9E24538AFE51B127</string>
+			<key>IDESourceControlWCCName</key>
+			<string>common-cocoa</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		1CD7527C1A608B0100F18662 /* Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1CD7527D1A608B0100F18662 /* Build configuration list for PBXAggregateTarget "Framework" */;
+			buildPhases = (
+				1CD752831A608CCD00F18662 /* Build Framework */,
+			);
+			dependencies = (
+				1CD752811A608B0D00F18662 /* PBXTargetDependency */,
+			);
+			name = Framework;
+			productName = Framework;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1C128B111A437C3F00535B8E /* DeskCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C128B101A437C3F00535B8E /* DeskCommon.m */; };
+		1C128B171A437C3F00535B8E /* libDeskCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C128B0B1A437C3F00535B8E /* libDeskCommon.a */; };
+		1C128B281A437E7400535B8E /* NSStringDSCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C128B271A437E7400535B8E /* NSStringDSCTests.m */; };
+		1C128B2C1A437E7D00535B8E /* NSString+DSC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C128B2B1A437E7D00535B8E /* NSString+DSC.m */; };
+		1C64C2281A44A1BE006C5755 /* NSDate+DSC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C64C2271A44A1BE006C5755 /* NSDate+DSC.m */; };
+		1C64C22A1A44A1FD006C5755 /* NSDateDSCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C64C2291A44A1FD006C5755 /* NSDateDSCTests.m */; };
+		1C6EDE7C1A66FE7500E3B12F /* DSCKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C6EDE7A1A66FE7500E3B12F /* DSCKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C6EDE7D1A66FE7500E3B12F /* DSCKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6EDE7B1A66FE7500E3B12F /* DSCKeychain.m */; };
+		1C6EDE811A67001200E3B12F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6EDE7E1A66FF3A00E3B12F /* Security.framework */; };
+		1C6EDE831A67022000E3B12F /* DSCKeychainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6EDE821A67022000E3B12F /* DSCKeychainTests.m */; };
+		1CD752771A6089B100F18662 /* NSString+DSC.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C128B2A1A437E7D00535B8E /* NSString+DSC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CD752781A6089B300F18662 /* NSDate+DSC.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C64C2261A44A1BE006C5755 /* NSDate+DSC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CD752791A6089B400F18662 /* DSCHttpStatusCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C128B251A437D3000535B8E /* DSCHttpStatusCodes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CD7527A1A6089E500F18662 /* DeskCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C128B0E1A437C3F00535B8E /* DeskCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CE4330A1AFD29A000C79A3F /* NSURLRequest+DSC.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CE433081AFD29A000C79A3F /* NSURLRequest+DSC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CE4330B1AFD29A000C79A3F /* NSURLRequest+DSC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE433091AFD29A000C79A3F /* NSURLRequest+DSC.m */; };
+		1CE4330E1AFD29EF00C79A3F /* DSCHttpHeaders.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE4330D1AFD29EF00C79A3F /* DSCHttpHeaders.m */; };
+		1CE433101AFD2AEE00C79A3F /* NSURLRequestDSCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE4330F1AFD2AEE00C79A3F /* NSURLRequestDSCTests.m */; };
+		1CE433111AFD2B8A00C79A3F /* DSCHttpHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CE4330C1AFD29CF00C79A3F /* DSCHttpHeaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C128B181A437C3F00535B8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C128B031A437C3F00535B8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C128B0A1A437C3F00535B8E;
+			remoteInfo = DeskCommon;
+		};
+		1CD752801A608B0D00F18662 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C128B031A437C3F00535B8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C128B0A1A437C3F00535B8E;
+			remoteInfo = DeskCommon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C128B0B1A437C3F00535B8E /* libDeskCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDeskCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C128B0E1A437C3F00535B8E /* DeskCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeskCommon.h; sourceTree = "<group>"; };
+		1C128B101A437C3F00535B8E /* DeskCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeskCommon.m; sourceTree = "<group>"; };
+		1C128B161A437C3F00535B8E /* DeskCommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeskCommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C128B1C1A437C3F00535B8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C128B251A437D3000535B8E /* DSCHttpStatusCodes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSCHttpStatusCodes.h; sourceTree = "<group>"; };
+		1C128B271A437E7400535B8E /* NSStringDSCTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = NSStringDSCTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		1C128B2A1A437E7D00535B8E /* NSString+DSC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DSC.h"; sourceTree = "<group>"; };
+		1C128B2B1A437E7D00535B8E /* NSString+DSC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DSC.m"; sourceTree = "<group>"; };
+		1C64C2261A44A1BE006C5755 /* NSDate+DSC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DSC.h"; sourceTree = "<group>"; };
+		1C64C2271A44A1BE006C5755 /* NSDate+DSC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DSC.m"; sourceTree = "<group>"; };
+		1C64C2291A44A1FD006C5755 /* NSDateDSCTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = NSDateDSCTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		1C6EDE7A1A66FE7500E3B12F /* DSCKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSCKeychain.h; sourceTree = "<group>"; };
+		1C6EDE7B1A66FE7500E3B12F /* DSCKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSCKeychain.m; sourceTree = "<group>"; };
+		1C6EDE7E1A66FF3A00E3B12F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1C6EDE821A67022000E3B12F /* DSCKeychainTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSCKeychainTests.m; path = Categories/DSCKeychainTests.m; sourceTree = "<group>"; };
+		1CE433081AFD29A000C79A3F /* NSURLRequest+DSC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+DSC.h"; sourceTree = "<group>"; };
+		1CE433091AFD29A000C79A3F /* NSURLRequest+DSC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+DSC.m"; sourceTree = "<group>"; };
+		1CE4330C1AFD29CF00C79A3F /* DSCHttpHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSCHttpHeaders.h; sourceTree = "<group>"; };
+		1CE4330D1AFD29EF00C79A3F /* DSCHttpHeaders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSCHttpHeaders.m; sourceTree = "<group>"; };
+		1CE4330F1AFD2AEE00C79A3F /* NSURLRequestDSCTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLRequestDSCTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C128B081A437C3F00535B8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C6EDE811A67001200E3B12F /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C128B131A437C3F00535B8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C128B171A437C3F00535B8E /* libDeskCommon.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C128B021A437C3F00535B8E = {
+			isa = PBXGroup;
+			children = (
+				1C128B0D1A437C3F00535B8E /* DeskCommon */,
+				1C128B1A1A437C3F00535B8E /* DeskCommonTests */,
+				1C128B0C1A437C3F00535B8E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1C128B0C1A437C3F00535B8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C128B0B1A437C3F00535B8E /* libDeskCommon.a */,
+				1C128B161A437C3F00535B8E /* DeskCommonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C128B0D1A437C3F00535B8E /* DeskCommon */ = {
+			isa = PBXGroup;
+			children = (
+				1C6EDE801A66FF5500E3B12F /* Frameworks */,
+				1C128B291A437E7D00535B8E /* Categories */,
+				1C128B0E1A437C3F00535B8E /* DeskCommon.h */,
+				1C128B101A437C3F00535B8E /* DeskCommon.m */,
+				1C128B251A437D3000535B8E /* DSCHttpStatusCodes.h */,
+				1CE4330C1AFD29CF00C79A3F /* DSCHttpHeaders.h */,
+				1CE4330D1AFD29EF00C79A3F /* DSCHttpHeaders.m */,
+				1C6EDE7A1A66FE7500E3B12F /* DSCKeychain.h */,
+				1C6EDE7B1A66FE7500E3B12F /* DSCKeychain.m */,
+			);
+			path = DeskCommon;
+			sourceTree = "<group>";
+		};
+		1C128B1A1A437C3F00535B8E /* DeskCommonTests */ = {
+			isa = PBXGroup;
+			children = (
+				1C128B261A437E7400535B8E /* Categories */,
+				1C128B1B1A437C3F00535B8E /* Supporting Files */,
+				1C6EDE821A67022000E3B12F /* DSCKeychainTests.m */,
+			);
+			path = DeskCommonTests;
+			sourceTree = "<group>";
+		};
+		1C128B1B1A437C3F00535B8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1C128B1C1A437C3F00535B8E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1C128B261A437E7400535B8E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1C128B271A437E7400535B8E /* NSStringDSCTests.m */,
+				1C64C2291A44A1FD006C5755 /* NSDateDSCTests.m */,
+				1CE4330F1AFD2AEE00C79A3F /* NSURLRequestDSCTests.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		1C128B291A437E7D00535B8E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1C128B2A1A437E7D00535B8E /* NSString+DSC.h */,
+				1C128B2B1A437E7D00535B8E /* NSString+DSC.m */,
+				1C64C2261A44A1BE006C5755 /* NSDate+DSC.h */,
+				1C64C2271A44A1BE006C5755 /* NSDate+DSC.m */,
+				1CE433081AFD29A000C79A3F /* NSURLRequest+DSC.h */,
+				1CE433091AFD29A000C79A3F /* NSURLRequest+DSC.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		1C6EDE801A66FF5500E3B12F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C6EDE7E1A66FF3A00E3B12F /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1CD752761A60897300F18662 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE4330A1AFD29A000C79A3F /* NSURLRequest+DSC.h in Headers */,
+				1CD7527A1A6089E500F18662 /* DeskCommon.h in Headers */,
+				1CE433111AFD2B8A00C79A3F /* DSCHttpHeaders.h in Headers */,
+				1CD752771A6089B100F18662 /* NSString+DSC.h in Headers */,
+				1CD752781A6089B300F18662 /* NSDate+DSC.h in Headers */,
+				1CD752791A6089B400F18662 /* DSCHttpStatusCodes.h in Headers */,
+				1C6EDE7C1A66FE7500E3B12F /* DSCKeychain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1C128B0A1A437C3F00535B8E /* DeskCommon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C128B1F1A437C3F00535B8E /* Build configuration list for PBXNativeTarget "DeskCommon" */;
+			buildPhases = (
+				1C128B071A437C3F00535B8E /* Sources */,
+				1C128B081A437C3F00535B8E /* Frameworks */,
+				1CD752761A60897300F18662 /* Headers */,
+				1CD7527B1A608A6B00F18662 /* Prepare Framework */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeskCommon;
+			productName = DeskCommon;
+			productReference = 1C128B0B1A437C3F00535B8E /* libDeskCommon.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1C128B151A437C3F00535B8E /* DeskCommonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C128B221A437C3F00535B8E /* Build configuration list for PBXNativeTarget "DeskCommonTests" */;
+			buildPhases = (
+				1C128B121A437C3F00535B8E /* Sources */,
+				1C128B131A437C3F00535B8E /* Frameworks */,
+				1C128B141A437C3F00535B8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C128B191A437C3F00535B8E /* PBXTargetDependency */,
+			);
+			name = DeskCommonTests;
+			productName = DeskCommonTests;
+			productReference = 1C128B161A437C3F00535B8E /* DeskCommonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C128B031A437C3F00535B8E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Desk.com;
+				TargetAttributes = {
+					1C128B0A1A437C3F00535B8E = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					1C128B151A437C3F00535B8E = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					1CD7527C1A608B0100F18662 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 1C128B061A437C3F00535B8E /* Build configuration list for PBXProject "DeskCommon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1C128B021A437C3F00535B8E;
+			productRefGroup = 1C128B0C1A437C3F00535B8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C128B0A1A437C3F00535B8E /* DeskCommon */,
+				1C128B151A437C3F00535B8E /* DeskCommonTests */,
+				1CD7527C1A608B0100F18662 /* Framework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C128B141A437C3F00535B8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CD7527B1A608A6B00F18662 /* Prepare Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Prepare Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n\n# Link the \"Current\" version to \"A\"\n/bin/ln -sfh A \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n# cause propagating rebuilds of files that import these headers.\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"";
+		};
+		1CD752831A608CCD00F18662 /* Build Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\nSF_TARGET_NAME=${PROJECT_NAME}\nSF_EXECUTABLE_PATH=\"lib${SF_TARGET_NAME}.a\"\nSF_WRAPPER_NAME=\"${SF_TARGET_NAME}.framework\"\n\n# The following conditionals come from\n# https://github.com/kstenerud/iOS-Universal-Framework\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\nSF_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\nSF_OTHER_PLATFORM=iphonesimulator\nelse\nSF_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SF_SDK_PLATFORM$ ]]\nthen\nSF_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${SF_OTHER_PLATFORM}\"\nelse\necho \"Could not find platform name from build products directory: $BUILT_PRODUCTS_DIR\"\nexit 1\nfi\n\n# Build the other platform.\nxcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${SF_OTHER_PLATFORM}${SF_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" $ACTION\n\n# Smash the two static libraries into one fat binary and store it in the .framework\nxcrun lipo -create \"${BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" -output \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n\n# Copy the binary to the other architecture folder to have a complete framework in both.\ncp -a \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C128B071A437C3F00535B8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C128B2C1A437E7D00535B8E /* NSString+DSC.m in Sources */,
+				1C128B111A437C3F00535B8E /* DeskCommon.m in Sources */,
+				1CE4330B1AFD29A000C79A3F /* NSURLRequest+DSC.m in Sources */,
+				1CE4330E1AFD29EF00C79A3F /* DSCHttpHeaders.m in Sources */,
+				1C6EDE7D1A66FE7500E3B12F /* DSCKeychain.m in Sources */,
+				1C64C2281A44A1BE006C5755 /* NSDate+DSC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C128B121A437C3F00535B8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C128B281A437E7400535B8E /* NSStringDSCTests.m in Sources */,
+				1C64C22A1A44A1FD006C5755 /* NSDateDSCTests.m in Sources */,
+				1C6EDE831A67022000E3B12F /* DSCKeychainTests.m in Sources */,
+				1CE433101AFD2AEE00C79A3F /* NSURLRequestDSCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1C128B191A437C3F00535B8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C128B0A1A437C3F00535B8E /* DeskCommon */;
+			targetProxy = 1C128B181A437C3F00535B8E /* PBXContainerItemProxy */;
+		};
+		1CD752811A608B0D00F18662 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C128B0A1A437C3F00535B8E /* DeskCommon */;
+			targetProxy = 1CD752801A608B0D00F18662 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1C128B1D1A437C3F00535B8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1C128B1E1A437C3F00535B8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1C128B201A437C3F00535B8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+			};
+			name = Debug;
+		};
+		1C128B211A437C3F00535B8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+			};
+			name = Release;
+		};
+		1C128B231A437C3F00535B8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DeskCommonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1C128B241A437C3F00535B8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DeskCommonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1CD7527E1A608B0100F18662 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1CD7527F1A608B0100F18662 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C128B061A437C3F00535B8E /* Build configuration list for PBXProject "DeskCommon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C128B1D1A437C3F00535B8E /* Debug */,
+				1C128B1E1A437C3F00535B8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C128B1F1A437C3F00535B8E /* Build configuration list for PBXNativeTarget "DeskCommon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C128B201A437C3F00535B8E /* Debug */,
+				1C128B211A437C3F00535B8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C128B221A437C3F00535B8E /* Build configuration list for PBXNativeTarget "DeskCommonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C128B231A437C3F00535B8E /* Debug */,
+				1C128B241A437C3F00535B8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CD7527D1A608B0100F18662 /* Build configuration list for PBXAggregateTarget "Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CD7527E1A608B0100F18662 /* Debug */,
+				1CD7527F1A608B0100F18662 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1C128B031A437C3F00535B8E /* Project object */;
+}
