@@ -1,5 +1,7 @@
 # DeskCommon
 
+DISCLAIMER: The DeskKit SDK is in Private Customer Pilot. It does not work out-of-box without a prior arrangement with the Desk.com product team. If you are interested in participating in the Private Customer Pilot, please send an email to jpappas@salesforce.com.
+
 DeskCommon is a static Cocoa Touch library that provides common code for Desk’s various iOS projects.
 
 The easiest way to install the library is as a cocoapod:
