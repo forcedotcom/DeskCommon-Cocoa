@@ -36,6 +36,10 @@
 #import <DeskCommon/NSDate+DSC.h>
 #import <DeskCommon/NSURLRequest+DSC.h>
 
-@interface DeskCommon : NSObject
+//! Project version number for DeskCommon.
+FOUNDATION_EXPORT double DeskCommonVersionNumber;
 
-@end
+//! Project version string for DeskCommon.
+FOUNDATION_EXPORT const unsigned char DeskCommonVersionString[];
+
+

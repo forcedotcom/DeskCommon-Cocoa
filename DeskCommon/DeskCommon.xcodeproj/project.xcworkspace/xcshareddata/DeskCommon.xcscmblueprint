@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2BBAF0D1FF83CF6321D86EA635C86140DB47704A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2BBAF0D1FF83CF6321D86EA635C86140DB47704A" : 0,
+    "50B4A7076026D15D142CA11C9E24538AFE51B127" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "445A794A-93A5-4B9E-AAD9-EF8359FCE499",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2BBAF0D1FF83CF6321D86EA635C86140DB47704A" : "DeskCommon-Cocoa\/",
+    "50B4A7076026D15D142CA11C9E24538AFE51B127" : "common-cocoa"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DeskCommon",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DeskCommon\/DeskCommon.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/forcedotcom\/DeskCommon-Cocoa.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2BBAF0D1FF83CF6321D86EA635C86140DB47704A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/assistly\/common-cocoa.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "50B4A7076026D15D142CA11C9E24538AFE51B127"
+    }
+  ]
+}
