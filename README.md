@@ -1,13 +1,42 @@
 # DeskCommon
+DeskCommon is a dynamic Cocoa Touch framework that provides common code for Desk’s various iOS projects.
 
-DeskCommon is a static Cocoa Touch library that provides common code for Desk’s various iOS projects.
+## Installation
+DeskCommon supports multiple methods for installing the framework in a project.
 
-The easiest way to install the library is as a cocoapod:
+### Installation with CocoaPods
+[CocoaPods](http://cocoapods.org) is a dependency manager, which automates and simplifies the process of using 3rd-party libraries in your projects.
 
+You can install it with the following command:
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+
+target 'TargetName' do
+pod 'DeskCommon', '~>1.0'
+end
 ```
-pod ‘DeskCommon’, :git => 'https://github.com/forcedotcom/DeskCommon-Cocoa.git'
+Then, run the following command:
+
+```bash
+$ pod install
 ```
 
+### Installation with Carthage
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
+
+To integrate DeskCommon into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+```ogdl
+github "forcedotcom/DeskCommon-Cocoa" ~> 1.0
+```
+Run `carthage` to build the framework and drag the built `DeskCommon.framework` into your Xcode project.
+
+### Installation using prebuilt Framework
+Starting DeskCommon version `1.1.0`, prebuilt frameworks are attached in github releases. In order to use prebuilt framework, download the appropriate version from [Releases](https://github.com/forcedotcom/DeskCommon-Cocoa/releases), unarchive the zip file and drag `DeskCommon.framework` into your Xcode project.
+
+## Files
 * **DSCStatusCodes** - a header file that provides constants for HTTP Response status codes
 * **DSCKeychain** - a helper class to save, load, and delete from a keychain
 * **NSString+DSC** - a category on `NSString` that contains helper methods for string manipulation and querying
