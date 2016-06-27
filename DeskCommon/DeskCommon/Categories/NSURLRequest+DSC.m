@@ -28,7 +28,7 @@
 //
 
 #import "NSURLRequest+DSC.h"
-#import "DSCHttpHeaders.h"
+#import <DeskCommon/DSCHttpHeaders.h>
 
 @implementation NSURLRequest (DSC)
 
