@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		526688EE1D22DF7700AD60FD /* DeskCommonUniversal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 526688F11D22DF7700AD60FD /* Build configuration list for PBXAggregateTarget "DeskCommonUniversal" */;
+			buildPhases = (
+				526688F21D22DF7F00AD60FD /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = DeskCommonUniversal;
+			productName = DeskCommonUniversal;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		1C128B281A437E7400535B8E /* NSStringDSCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C128B271A437E7400535B8E /* NSStringDSCTests.m */; };
 		1C64C22A1A44A1FD006C5755 /* NSDateDSCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C64C2291A44A1FD006C5755 /* NSDateDSCTests.m */; };
@@ -221,6 +235,9 @@
 					1C128B151A437C3F00535B8E = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
+					526688EE1D22DF7700AD60FD = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					52F7146C1D21522A00B40BAD = {
 						CreatedOnToolsVersion = 7.3;
 					};
@@ -240,6 +257,7 @@
 			targets = (
 				52F7146C1D21522A00B40BAD /* DeskCommon */,
 				1C128B151A437C3F00535B8E /* DeskCommonTests */,
+				526688EE1D22DF7700AD60FD /* DeskCommonUniversal */,
 			);
 		};
 /* End PBXProject section */
@@ -260,6 +278,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		526688F21D22DF7F00AD60FD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Merge Script\n\n# workaround for bitcode generation problem with Xcode 7.3 - http://stackoverflow.com/questions/36184930/xcodebuild-7-3-cant-enable-bitcode\nunset TOOLCHAINS\n\n# 1\n# Set bash script to exit immediately if any commands fail.\nset -e\n\n# 2\n# Setup some constants for use later on.\nFRAMEWORK_NAME=\"DeskCommon\"\nSCHEME_NAME=\"DeskCommon\"\nOUTPUT_DIR=\"${HOME}/Desktop\"\n\n# 3\n# If remnants from a previous build exist, delete them.\nif [ -d \"${BUILD_DIR}\" ]; then\nrm -rf \"${BUILD_DIR}\"\nfi\n\n# 4\n# Build the framework for device and for simulator (using\n# all needed architectures).\nxcodebuild build -scheme \"${SCHEME_NAME}\" -configuration Release -arch arm64 -arch armv7 -arch armv7s only_active_arch=no defines_module=yes -sdk \"iphoneos\"\nxcodebuild build -scheme \"${SCHEME_NAME}\" -configuration Release -arch x86_64 -arch i386 only_active_arch=no defines_module=yes -sdk \"iphonesimulator\"\n\n# 5\n# Remove .framework file if exists on OUTPUT_DIR from previous run.\nif [ -d \"${OUTPUT_DIR}/${FRAMEWORK_NAME}.framework\" ]; then\nrm -rf \"${OUTPUT_DIR}/${FRAMEWORK_NAME}.framework\"\nfi\n\n# 6\n# Copy the device version of framework to OUTPUT_DIR.\ncp -r \"${BUILD_DIR}/Release-iphoneos/${FRAMEWORK_NAME}.framework\" \"${OUTPUT_DIR}/${FRAMEWORK_NAME}.framework\"\n\n# 7\n# Replace the framework executable within the framework with\n# a new version created by merging the device and simulator\n# frameworks' executables with lipo.\nlipo -create -output \"${OUTPUT_DIR}/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${BUILD_DIR}/Release-iphoneos/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${BUILD_DIR}/Release-iphonesimulator/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\"\n\n# 8\n# Copy the Swift module mappings for the simulator into the\n# framework.  The device mappings already exist from step 6.\n# cp -r \"${BUILD_DIR}/Release-iphonesimulator/${FRAMEWORK_NAME}.framework/Modules/${FRAMEWORK_NAME}.swiftmodule/\" \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework/Modules/${FRAMEWORK_NAME}.swiftmodule\"\n\n# 9\n# Delete the most recent build.\nif [ -d \"${BUILD_DIR}\" ]; then\nrm -rf \"${BUILD_DIR}\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1C128B121A437C3F00535B8E /* Sources */ = {
@@ -403,6 +437,22 @@
 			};
 			name = Release;
 		};
+		526688EF1D22DF7700AD60FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-fembed-bitcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		526688F01D22DF7700AD60FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-fembed-bitcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		52F714731D21522A00B40BAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -478,6 +528,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		526688F11D22DF7700AD60FD /* Build configuration list for PBXAggregateTarget "DeskCommonUniversal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				526688EF1D22DF7700AD60FD /* Debug */,
+				526688F01D22DF7700AD60FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		52F714721D21522A00B40BAD /* Build configuration list for PBXNativeTarget "DeskCommon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -485,6 +543,7 @@
 				52F714741D21522A00B40BAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
