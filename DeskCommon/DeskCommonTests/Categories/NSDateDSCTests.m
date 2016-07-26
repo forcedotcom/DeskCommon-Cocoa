@@ -40,11 +40,9 @@
 - (void)testStringWithISO8601Format
 {
     NSDate *date = [NSDate dateWithTimeIntervalSince1970:1419012915]; // 12/19/14
-    NSTimeInterval timeZoneSeconds = [[NSTimeZone timeZoneWithAbbreviation:@"CST"] secondsFromGMT];
-    NSDate *utcDate = [date dateByAddingTimeInterval:-timeZoneSeconds];
     
-    NSString *stringFromDate = [utcDate stringWithISO8601Format];
-    XCTAssertTrue([stringFromDate isEqualToString:@"2014-12-19T17:15:15Z"]);
+    NSString *stringFromDate = [date stringWithISO8601Format];
+    XCTAssertTrue([stringFromDate isEqualToString:@"2014-12-19T18:15:15Z"]);
 }
 
 @end

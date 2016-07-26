@@ -38,6 +38,7 @@ static NSString *const DSCISO8601FormatString = @"yyyy-MM-dd'T'HH:mm:ss'Z'";
 {
     NSDateFormatter *dateFormatter = [NSDateFormatter new];
     [dateFormatter setDateFormat:DSCISO8601FormatString];
+    [dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
     return [dateFormatter stringFromDate:self];
 }
 
